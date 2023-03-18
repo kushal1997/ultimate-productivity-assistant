@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Tracker</title>
+
+    <link rel="icon" type="image/x-icon" href="./images/budget.png">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main>
+        <div class="outerWrap">
+            <div class="innerWrap">
+                <section class="heading">
+                    <p class="title">Budget Tracker</p>
+                    <p class="subtitle">Manage all your expenses in a simpler way</p>
+
+                </section>
+                <section class="transactionControl">
+                    <div class="actions">
+                        <h3>Add Transaction</h3>
+                        <form class="add">
+                            <input type="text" name="source" placeholder="Sourse" autocomplete="off">
+                            <input type="number" name="amount" placeholder="Amount" autocomplete="off">
+                            <input type="submit" value="Add Transaction">
+                        </form>
+                    </div>
+                    <div class="stats">
+                        <h3>Statistics</h3>
+                        <p class="balance">
+                            Balance: ₹ <span id="balance"></span>
+                        </p>
+                        <p class="income">
+                            Income: ₹ <span id="income"></span>
+                        </p>
+                        <p class="expense">
+                            Expense: ₹ <span id="expense"></span>
+                        </p>
+                    </div>
+                
+                </section>
+                <section class="transactionHistory">
+                    <h3>Transaction History</h3>
+                    <div class="records">
+                        <div class="income">
+                            <h3>Income</h3>
+                            <ul class="incomeList">
+
+                            </ul>
+                        </div>
+                        <div class="expense">
+                            <h3>Expense</h3>
+                            <ul class="expenseList">
+                                
+                            </ul>
+                        </div>
+                    </div>
+                
+
+                </section>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="./script.js"></script>
+    
+</body>
+</html>
