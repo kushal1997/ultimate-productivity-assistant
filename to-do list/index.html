@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="icon" type="image/x-icon" href="./images/tasks.png">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main>
+        <div class="wrap">
+            <section class="heading">
+                <p class="title">Daily Task Manager</p>
+                <p class="subtitile">Mange your work here</p>
+            </section>
+            <section class="taskManager">
+                <div class="searchBox">
+                    <form class="search">
+                        <input type="text" name="task" placeholder="search task" autocomplete="off">
+                        <i class="bi bi-x-circle reset"></i>
+                    </form>
+                </div>
+                <div class="addTask">
+                    <ul class="tasks">
+                        <li>
+                            <span>Learn HTML</span>
+                            <i class="bi bi-trash-fill delete"></i>
+                        </li>
+                        <li>
+                            <span>Learn CSS</span>
+                            <i class="bi bi-trash-fill delete"></i>
+                        </li>
+                        <li>
+                            <span>Learn JS</span>
+                            <i class="bi bi-trash-fill delete"></i>
+                        </li>
+                        <li>
+                            <span>Learn REACT.JS</span>
+                            <i class="bi bi-trash-fill delete"></i>
+                        </li>
+                    </ul>
+                    <form class="add">
+                        <input type="text" name="task" placeholder="add task" autocomplete="off">
+                        <input type="submit" value="Add"> 
+                    </form>
+                </div>
+                <div class="clearTask">
+                    <span></span>
+                    <button class="clear">Clear All</button>
+                </div>
+            </section>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+
+</body>
+</html>
