@@ -14,3 +14,212 @@
     text-decoration: none;
     list-style: none;
 }
+body{
+    background-color: #FFFFFF;
+}
+main{
+    min-height: 85vh;
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 0px 10px;
+}
+.header{
+    background-color: #FFFFFF;
+}
+.header .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 70px;
+    padding: 0px 20px;
+    border-bottom: 1px solid #0000001a;
+}
+.header .logo{
+    max-width: 40px;
+    display: flex;
+    align-items: center;
+}
+.header .logo img{
+    width: 100%;
+}
+.header .logo span{
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #393E46;
+}
+.header .navItems{
+    display: flex;
+}
+.header .navItems li{
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 3px;
+    font-family: 600;
+}
+.header .navItems li:hover{
+    background-color: #EEEEEE;
+}
+.header .navItems li.active{
+    background-color: #EEEEEE;
+}
+.header .navItems a{
+    color: #393E46;
+}
+.header .hamburger{
+    display: none;
+    cursor: pointer;
+}
+.header .hamburger .bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #393E46;
+    transition: all 0.3s ease-in-out;
+}
+.newsletter{
+    background-color: #0d479a;
+    color: #FFFFFF;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin: 5px 0px;
+    border-radius: 3px;
+    font-weight: 600;
+}
+.newsletter:hover{
+    background-color: #0c3d81 !important;
+}
+.homepage{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 50px 20px;
+}
+.homepage .textWrap{
+    width: 44%;
+    align-self: center;
+}
+.homepage .textWrap * {
+    margin-bottom: 20px;
+}
+.homepage .title{
+    font-size: 42px;
+}
+.homepage .subtitle{
+    font-size: 22px;
+    font-weight: 400;
+}
+.homepage .visualWrap{
+    width: 44%;
+    text-align: center;
+}
+.homepage .visualWrap img{
+    max-height: 60vh;
+}
+.conveyer{
+    margin: 50px auto;
+    padding: 20px;
+}
+.windboxes{
+    margin: 50px auto;
+    padding: 20px;
+}
+.windboxes .faq{
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    text-align: center;
+    text-decoration: underline;
+}
+.windboxes .windbox{
+    margin: 20px 0px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    border: 1px solid #0000001a;
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+.windboxes .title{
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 15px;
+    user-select: none;
+    position: relative;
+}
+.windbox .title:after{
+    content: "+";
+    font-size: 24px;
+    position: absolute;
+    right: 16px;
+}
+.windboxes .title.active:after{
+    content: "-";
+}
+.windboxes .content{
+    padding: 15px;
+    display: none;
+    border-top: 1px solid #0000001a;
+    user-select: none;
+    background-color: #f6f8fd;
+    border-left: 3px solid #0c3d81;
+    font-size: 18px;
+}
+.windboxes .content.active{
+    display: block;
+}
+.tagline{
+    margin: 50px auto;
+    padding: 40px 10px;
+    text-align: center;
+    border: 1px solid #0000001a;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+}
+.tagline p{
+    font-size: 24px;
+    font-weight: 500;
+    color: #333333;
+}
+.tagline .sub{
+    margin-bottom: 20px;
+}
+
+@media (max-width: 1064px) {
+    .header .navItems{
+        flex-direction: column;
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        background-color: #FFFFFF;
+        color: #393E46;
+        width: 100%;
+        transition: 0.3s;
+    }
+    .header .navItems.active{
+        left: 0px;
+    }
+    .header .navItems li{
+        border-bottom: 1px solid #0000001a;
+        padding: 20px;
+    }
+    .header .newsletter{
+        padding: 20px;
+        margin: 10px;
+    }
+    .header .hamburger{
+        display: block;
+    }
+    .header .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .header .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .header .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
