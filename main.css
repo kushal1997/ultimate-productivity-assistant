@@ -186,6 +186,91 @@ main{
 .tagline .sub{
     margin-bottom: 20px;
 }
+.modal{
+    background-color: #393E46D8;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal.show{
+    pointer-events: auto;
+    z-index: 2;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.modal .newsletterModal{
+    background-color: #FFFFFF;
+    border: 1px solid #0000001a;
+    border-radius: 5px;
+    max-width: 350px;
+    padding: 70px 25px;
+    box-shadow: var(--box-shadow);
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.modal .close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.modal .newsletterModal p{
+    font-size: 20px;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.modal form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.modal form input{
+    font-size: 16px;
+    border-radius: 3px;
+    border: 1px solid #0000001a;
+    padding: 5px;
+}
+
+.modal form input[type="submit"]{
+    background-color: #0d479a;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+footer{
+    background-color: #FFFFFF;
+}
+footer .footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 15px;
+    border-top: 1px solid #0000001a;
+}
+.footer i.social{
+    margin: 0px 5px;
+    cursor: pointer;
+}
+footer .bi-twitter{
+    color: #1da1f2;
+}
+footer .bi-linkedin{
+    color: #0C66C2;
+}
+footer .bi-instagram{
+    color: #c13584;
+}
 
 @media (max-width: 1064px) {
     .header .navItems{
@@ -220,6 +305,12 @@ main{
     }
     .header .hamburger.active .bar:nth-child(3){
         transform: translateY(-8px) rotate(-45deg);
+    }
+    .homepage .textWrap{
+        width: 100%;
+    }
+    .homepage .visualWrap{
+        width: 100%;
     }
 }
 
