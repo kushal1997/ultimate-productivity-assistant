@@ -196,14 +196,12 @@ main{
     opacity: 0;
     pointer-events: none;
 }
-
 .modal.show{
     pointer-events: auto;
     z-index: 2;
     opacity: 1;
     transition: opacity 0.3s ease;
 }
-
 .modal .newsletterModal{
     background-color: #FFFFFF;
     border: 1px solid #0000001a;
@@ -216,34 +214,29 @@ main{
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
 }
-
 .modal .close{
     position: absolute;
     top: 10px;
     right: 10px;
     cursor: pointer;
 }
-
 .modal .newsletterModal p{
     font-size: 20px;
     text-align: center;
     font-weight: 500;
     margin-bottom: 15px;
 }
-
 .modal form{
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
-
 .modal form input{
     font-size: 16px;
     border-radius: 3px;
     border: 1px solid #0000001a;
     padding: 5px;
 }
-
 .modal form input[type="submit"]{
     background-color: #0d479a;
     color: #FFFFFF;
