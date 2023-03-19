@@ -7,6 +7,7 @@
     <title>The Ultimate Productivity Assistant</title>
 
     <link rel="shortcut icon" href="/images/data-science.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./main.css">
 
 </head>
@@ -66,7 +67,45 @@
             </section>
 
             <section class="carousel">
-
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./images/budget-manager.png" alt="">
+                        <p>Budget Manager</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/kanban.png" alt="">
+                        <p>Project Manager</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/news.png" alt="">
+                        <p>News</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/todo-list.png" alt="">
+                        <p>To-do List</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/bookmark-manager.png" alt="">
+                        <p>Bookmark Mnagaer</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/quiz.png" alt="">
+                        <p>Quiz</p>
+                    </div>
+                    </div>
+                    
+                    <!-- <div class="swiper-pagination"></div> -->
+                </div>
+                <div class="swiper-button-wrapper">
+                    <div class="swiper-next">
+                        <i class="bi bi-arrow-left"></i>
+                    </div>
+                    <div class="swiper-prev">
+                        <i class="bi bi-arrow-right"></i>
+                    </div>
+                </div>
             </section>
             <section class="windboxes">
                 <p class="faq">Frequently Asked Questions</p>
@@ -87,17 +126,7 @@
                 <span class="newsletter">Join Newsletter</span>
             </section>
 
-            <section class="modal">
-                <div class="newsletterModal">
-                    <p>Join Newsletter Now!</p>
-                    <form>
-                        <input type="text" name="name" placeholder="Name" autocomplete="off">
-                        <input type="email" name="email" placeholder="Email" autocomplete="off">
-                        <input type="submit" value="Submit">
-                    </form>
-                    <i class="bi bi-x-lg close"></i>
-                </div>
-            </section>
+            
         </div>
     </main>
 
@@ -114,7 +143,19 @@
                 </div>
             </div>
         </div>
+        <section class="modal">
+            <div class="newsletterModal">
+                <p>Join Newsletter Now!</p>
+                <form>
+                    <input type="text" name="name" placeholder="Name" autocomplete="off">
+                    <input type="email" name="email" placeholder="Email" autocomplete="off">
+                    <input type="submit" value="Submit">
+                </form>
+                <i class="bi bi-x-lg close"></i>
+            </div>
+        </section>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="./main.js"></script>
     
 </body>
