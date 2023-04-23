@@ -7,16 +7,57 @@
     <title>Kanban Style Task Manager</title>
 
     <link rel="icon" type="image/x-icon" href="./IMAGES/daily-tasks.png">
+    <link rel="stylesheet" href="/main.css">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <header class="header">
+        <div class="container">
+            <div class="navbar">
+                <a href="/" class="logo">
+                    <img src="/images/logo.svg" alt="Noizy">
+                    <span>Noizy</span>
+                </a>
+                <nav>
+                    <ul class="navItems">
+                        <li>
+                            <a href="/quiz">Quiz</a>
+                        </li>
+                        <li>
+                            <a href="/news_portal">News</a>
+                        </li>
+                        <li>
+                            <a href="/to-do list">Todo List</a>
+                        </li>
+                        <li>
+                            <a href="/project_manager">Progress Manager</a>
+                        </li>
+                        <li>
+                            <a href="/bookmark_manager">Bookmark Manger</a>
+                        </li>
+                        <li>
+                            <a href="/budget_tracker">Budget Tracker</a>
+                        </li>
+                        
+                        <span class="newsletter">Join Newsletter</span>
+                    </ul>
+                </nav>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                
+            </div>
+        </div>
+    </header>
     <main>
         <div class="outer-wrap">
             <div class="inner-wrap">
-                <section class="heading">
+                <!-- <section class="heading">
                     <p class="title">TASK MANAGER</p>
                     <p class="subtitle">Web Based Kanban Style Application To Handle Task Progress</p>
-                </section>
+                </section> -->
                 <section class="kanban">
                     <div class="taskbox">
                         <div class="title">
@@ -58,6 +99,34 @@
             </div>
         </div>
     </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer">
+                <div class="brandName">
+                    <span>@Noizy by Kushal Rao</span>
+                </div>
+                <div class="cocialIcons">
+                    <i class="bi bi-twitter social"></i>
+                    <i class="bi bi-linkedin social"></i>
+                    <i class="bi bi-instagram social"></i>
+                </div>
+            </div>
+        </div>
+        <section class="modal">
+            <div class="newsletterModal">
+                <p>Join Newsletter Now!</p>
+                <form>
+                    <input type="text" name="name" placeholder="Name" autocomplete="off">
+                    <input type="email" name="email" placeholder="Email" autocomplete="off">
+                    <input type="submit" value="Submit">
+                </form>
+                <i class="bi bi-x-lg close"></i>
+            </div>
+        </section>
+    </footer>
+
+    <script src="/main.js"></script>
 
     <script type="module" src="./script.js"></script>
     
